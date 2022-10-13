@@ -1,0 +1,19 @@
+.header {
+    height: 100vh;
+    background: linear-gradient(#0051E4, #81BEFE);
+}
+
+.navbar {
+    display: flex;
+    color: #fff;
+    position: absolute;
+    top: 55px;
+    right: 191px;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: .2em;
+}
+
+.navbar li {
+    margin-right: 67px;
+}
