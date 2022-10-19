@@ -1,7 +1,16 @@
 # Pending
 
-- Layout.js, meta, Head
+- Meta.js, metatags
 
-- {/* <p onClick={() => {setDesignIndex(designIndex + 1)}}>Change</p> */}
+- add old logo
 
-- font family changes
+- see if next loading img appears when project is deployed
+______________________________________
+
+- responsive 1600px
+
+- animations after responsive
+
+- see if @media 1600px messes up with 1000p
+
+- remove next design btn

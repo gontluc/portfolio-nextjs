@@ -1,41 +1,31 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import { useRef, useEffect } from 'react'
 
-import { useState } from 'react'
-
-import Header1 from '../components/Design1/Header'
-import Header2 from '../components/Design2/Header'
-import Header3 from '../components/Design3/Header'
+import Header from '../components/Design1/Header'
+import Projects from '../components/Design1/Projects'
 
 export default function Home() {
+  const projects = useRef(null)
 
-  // [0, 1, 2] = 3 Designs
-  const [designIndex, setDesignIndex] = useState(0)
+  useEffect(() => {
+    // Scroll (instant) top when refresh page
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant',
+    })
 
-  if (designIndex === 0) {
-    return (
-      <>
-        <Head>
-          <title>Lucas Gontijo</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+    // Change font family
+    document.querySelector(':root').style.setProperty('--font-family', "'Poppins', sans-serif")
+  }, [])
 
-        <main>
-          <Header1>
-            
-          </Header1>
-        </main>
+  return (
+    <>
+      <main>
+        <Header projects={projects}/>
+        <Projects projects={projects}/>
+      </main>
 
-        <footer></footer>
-      </>
-    )
-  } else if (designIndex === 1) {
-    return (
-      <></>
-    )
-  } else {
-    return (
-      <></>
-    )
-  }
+      <footer></footer>
+    </>
+  )
 }

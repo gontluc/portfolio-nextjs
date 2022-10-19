@@ -6,8 +6,19 @@
   margin: 0;
 }
 
+html {
+  --dark-blue: #003381;
+  --normal-blue: #0051E4;
+  --light-blue: #81BEFE;
+
+  --font-family: 'Poppins', sans-serif;
+
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-family);
+  cursor: default;
 }
 
 a {
@@ -17,4 +28,8 @@ a {
 
 ul {
   list-style: none;
+}
+
+::selection { 
+  background: transparent;
 }
