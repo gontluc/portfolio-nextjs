@@ -1,0 +1,30 @@
+#skills {
+    /* --margin-top-title-section-skills: 140px;
+    scroll-margin: var(--margin-top-title-section-skills); */
+    padding-top: 140px;
+    height: 100vh;/*  */
+    background-image: url('/images/design1/skills-bg.png');
+    background-color: var(--light-blue);
+    background-size: 194px;
+}
+
+.skillsSectionTitle {/*  */
+    color: var(--dark-blue);
+    font-weight: bold;
+    font-size: 65px;
+    letter-spacing: .15em;
+    margin-left: 210px;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.skillsSectionTitle::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 10px;
+    background-color: var(--dark-blue);
+    border-radius: 200px;
+}

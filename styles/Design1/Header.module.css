@@ -1,6 +1,5 @@
 .header {
     height: 100vh;
-    min-height: 896px;
     background: linear-gradient(var(--normal-blue), var(--light-blue));
 }
 
@@ -44,7 +43,7 @@
     display: flex;
     width: 100%;
     position: absolute;
-    top: 245px;
+    top: 12vw;
     animation: forwards ease-in-out 1s appears;
 }
 
@@ -296,11 +295,99 @@
     }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1680px) {
+    .navbar {
+        font-size: 20px;
+    }
+
+    .headerContainer .left {
+        min-width: 300px;
+        width: 300px;
+        height: 386px;
+        margin-left: 20vw;
+        margin-top: 40px;
+    }
     
+    .headerContainer .left1 {
+        width: 300px;
+        height: 386px;
+    }
+    
+    .headerContainer .headerImg {
+        width: 300px;
+        height: 386px;
+        /* right: 80px;
+        bottom: 40px; */
+    }
+
+    .headerText {
+        margin-left: 10vw;
+    }
+
+    .headerText .name {
+        padding: 4px 12px;
+        font-size: 16px;
+    }
+
+    .adcopy1 {
+        font-size: 30px;
+    }
+    
+    .adcopy2 {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    
+    .adcopy3 {
+        font-size: 30px;
+    }
+
+    .btns {
+        margin-top: 80px;
+        margin-right: 5vw;
+    }
+    
+    .socialLinks {
+        width: 15vw;
+    }
+    
+    .socialLinks .link a{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .socialLinks .linkGH{
+        width: 33px;
+    }
+    
+    .socialLinks .linkLI{
+        width: 26px;
+    }
+    
+    .socialLinks .linkE{
+        width: 32px;
+    }
+    
+    .nextDesign {
+        font-size: 18px;
+        padding: 2px 16px;
+    }
+
+    .nextDesign svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .nextDesign p {
+        margin-right: 10px;
+    }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+    .header {
+        min-height: 896px;
+    }
+
     .headerContainer {
         flex-direction: column-reverse;
         align-items: center;
@@ -447,6 +534,7 @@
     .socialLinks .link a{
         width: 40px;
         height: 40px;
+        margin-right: 10px;
     }
     
     .socialLinks .link a:hover {

@@ -1,10 +1,12 @@
 import { useRef, useEffect } from 'react'
 
 import Header from '../components/Design1/Header'
-import Projects from '../components/Design1/Projects'
+import Projects from '../components/Design1/Projects/Projects'
+import Skills from '../components/Design1/Skills'
 
 export default function Home() {
   const projects = useRef(null)
+  const skills = useRef(null)
 
   useEffect(() => {
     // Scroll (instant) top when refresh page
@@ -21,8 +23,12 @@ export default function Home() {
   return (
     <>
       <main>
-        <Header projects={projects}/>
+        <Header 
+          projects={projects}
+          skills={skills}
+        />
         <Projects projects={projects}/>
+        <Skills skills={skills} />
       </main>
 
       <footer></footer>

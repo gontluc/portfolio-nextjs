@@ -5,12 +5,21 @@
 - add old logo
 
 - see if next loading img appears when project is deployed
+
+- put new project imgs and optimize them
+
+- test phone and my laptop
+
+- explain what to do when adding a project (for each design)
 ______________________________________
 
-- responsive 1600px
+- skills section
 
-- animations after responsive
+- hover and animations
 
-- see if @media 1600px messes up with 1000p
+- responsive
 
-- remove next design btn
+- see if section titles match left margin
+
+- check animations after responsive
+
