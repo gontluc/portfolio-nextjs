@@ -11,9 +11,11 @@
 - test phone and my laptop
 
 - explain what to do when adding a project (for each design)
+
+- optimize skills section imgs (tech logos + square bg)
 ______________________________________
 
-- skills section
+- skills section (13h30-)
 
 - hover and animations
 
