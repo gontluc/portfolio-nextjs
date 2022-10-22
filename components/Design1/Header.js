@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import { useRef, useEffect } from 'react'
 
-export default function Header({ projects, skills }) {
+export default function Header({ projects, skills, about }) {
     
     const hamburger = useRef(null)
     const sideMenu = useRef(null)
@@ -46,7 +46,7 @@ export default function Header({ projects, skills }) {
                 <ul>
                     <li onClick={() => projects.current.scrollIntoView()}>PROJECTS</li>
                     <li onClick={() => skills.current.scrollIntoView()}>SKILLS</li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li onClick={() => about.current.scrollIntoView()}>ABOUT</li>
                 </ul>
             </nav>
 
@@ -59,7 +59,7 @@ export default function Header({ projects, skills }) {
                     </li>
                     <li onClick={() => projects.current.scrollIntoView()}>PROJECTS</li>
                     <li onClick={() => skills.current.scrollIntoView()}>SKILLS</li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li onClick={() => about.current.scrollIntoView()}>ABOUT</li>
                 </ul>
 
                 <div className={styles.hamburguerMenu} ref={hamburger}>

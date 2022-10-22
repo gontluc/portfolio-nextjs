@@ -3,12 +3,11 @@
     scroll-margin: var(--margin-top-title-section-skills); */
     padding-top: 140px;
     position: relative;
-    -webkit-font-smoothing: antialiased;
     overflow: hidden;
 }
 
 #skills::before {
-    content: url('/images/design1/bg-square.png');
+    content: url('/images/design1/bg-square2.png');
     position: absolute;
     top: -450px;
     right: -450px;
@@ -25,6 +24,7 @@
     background-image: url('/images/design1/skills-bg.png');
     background-color: var(--light-blue);
     background-size: 194px;
+    background-attachment: fixed;
 }
 
 .skillsSectionTitle {
@@ -59,6 +59,8 @@
     width: fit-content;
     letter-spacing: .25em;
     position: relative;
+    --secondaryTitle-top: 0px;
+    --secondaryTitle-left: 0px;
 }
 
 .secondaryTitle:nth-of-type(2) {
@@ -67,23 +69,25 @@
 
 .secondaryTitle:nth-of-type(3) {
     margin-top: 250px;
+    margin-bottom: 0;
 }
 
 .secondaryTitle::before {
     content: '';
     position: absolute;
-    top: 10px;
-    left: 20px;
-    background-color: #fff;
+    top: var(--secondaryTitle-top);
+    left: var(--secondaryTitle-left);
+    background-color: #f5f5f5;
     width: 100%;
     height: 100%;
     border-radius: 200px;
     z-index: -1;
+    transition: all 1s ease-out;
 }
 
 .secondaryTitle:last-of-type {
     color: var(--dark-blue);
-    background-color: #fff;
+    background-color: #f5f5f5;
 }
 
 .secondaryTitle:last-of-type::before {
@@ -106,7 +110,7 @@
 .imgsContainer {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #f5f5f5;
     padding: 30px;
     border: 35px var(--dark-blue) solid;
     align-items: center;
@@ -168,10 +172,6 @@
     z-index: -1;
 }
 
-.mainTechDescription:nth-child(3)::before p {
-    color: rgb(160, 44, 148);
-}
-
 .otherTechnologies {
     background-color: #f5f5f5;
     display: flex;
@@ -213,12 +213,14 @@
     height: 110px;
     border-radius: 15px;
     background-color: var(--dark-blue);
+    /* milisecondsDurationTransition in JS */
     transition: transform 1s ease-out;
 }
 
 .otherTechnologiesImg img{
     width: 110px;
     border-radius: 15px;
+    /* milisecondsDurationTransition in JS */
     transition: all 1s ease-in;
     transform: rotate3d(0, 1, 0, 90deg);
 }
@@ -232,4 +234,225 @@
     display: flex;
     gap: 45px;
     margin-left: 55px;
+}
+
+.otherSillsDots {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.otherSillsDots img {
+    width: 1062px;
+}
+
+.otherSkills {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 350px;
+}
+
+.otherSkill {
+    background-color: #F5F5F5;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    width: 320px;
+    height: 320px;
+    padding: 35px 0;
+    justify-content: space-around;
+    position: relative;
+}
+
+.otherSkill::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    background-color: var(--dark-blue);
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.otherSkill:nth-of-type(2):before {
+    background-color: transparent;
+    border: 8px solid var(--dark-blue);
+    top: 15px;
+    left: 35px;
+}
+
+.otherSkillDescription {
+    color: var(--dark-blue);
+    font-size: 20px;
+    width: 75%;
+}
+
+.otherSlillImgs {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+}
+
+.otherSlillImgs img {
+    width: 64px;
+}
+
+.aboutPill {
+    position: absolute;
+    background-color: #fff;
+    width: 515px;
+    height: 144px;
+    bottom: -72px;
+    left: 100px;
+    border-radius: 200px;
+}
+
+@media (max-width: 1830px) {
+    #skills {
+        padding-top: 80px;
+    }
+
+    .skillsSectionTitle {
+        font-size: 45px;
+        margin-left: 10vw;
+    }
+    
+    .skillsSectionTitle::before {
+        width: 90px;
+        height: 7px;
+    }
+
+    .secondaryTitle {
+        margin-top: 60px;
+        margin-bottom: 80px;
+        font-size: 22px;
+        padding: 7px 20px;
+        letter-spacing: .2em;
+    }
+    
+    .secondaryTitle:nth-of-type(2) {
+        margin-top: 150px;
+    }
+    
+    .secondaryTitle:nth-of-type(3) {
+        margin-top: 150px;
+    }
+
+    .mainTechnologiesContainer {
+        gap: 190px;
+    }
+    
+    .mainTechnologies {
+        gap: 7vw;
+    }
+    
+    .imgsContainer {
+        border: 25px var(--dark-blue) solid;
+    }
+    
+    .imgsContainer img {
+        width: 150px;
+    }
+    
+    .mainTechnologies:last-of-type .imgsContainer img:last-of-type {
+        width: 135px;
+    }
+    
+    .mainTechDescription {
+        font-size: 16px;
+    }
+
+    .mainTechDescription:nth-child(3)::before {
+        top: calc(50% - 520px);
+        transform: scale(.8);
+    }
+
+    .otherTechnologiesImgs::before {
+        top: -20%;
+        left: -60%;
+        transform: scale(.3);
+    }
+    
+    .otherTechnologiesDescription {
+        font-size: 16px;
+        padding-top: 80px;
+        padding-bottom: 100px;
+        margin-right: 40px;
+    }
+    
+    .otherTechnologiesImgs {
+        gap: 20px;
+    }
+    
+    .otherTechnologiesImg {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .otherTechnologiesImg img{
+        width: 90px;
+    }
+    
+    .imgsUpRow {
+        gap: 35px;
+    }
+    
+    .imgsDownRow {
+        gap: 35px;
+        margin-left: calc(90px / 2);
+    }
+    
+    .otherSillsDots img {
+        width: calc(1062px * 0.9);
+    }
+    
+    .otherSkills {
+        gap: 180px;
+        margin-bottom: 280px;
+    }
+    
+    .otherSkill {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .otherSkillDescription {
+        font-size: 16px;
+    }
+    
+    .otherSlillImgs {
+        gap: 20px;
+    }
+    
+    .otherSlillImgs img {
+        width: 50px;
+    }
+    
+    .aboutPill {
+        /* position: absolute;
+        background-color: #fff;
+        width: 515px;
+        height: 144px;
+        bottom: -72px;
+        left: 100px;
+        border-radius: 200px; */
+    }
+}
+
+@media (max-width: 1500px) {
+    .otherTechnologiesImgs::before {
+        left: -65%;
+        transform: scale(.2);
+    }
+    /* fix other skills section */
+}
+
+@media (max-width: 1250px) {
+    /* lower font size to mobile size, change layout to mobile layout*/
 }

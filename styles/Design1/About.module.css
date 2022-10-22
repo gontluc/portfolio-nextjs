@@ -1,0 +1,23 @@
+#about {
+    height: 100vw;/*  */
+}
+
+.aboutSectionTitle {
+    color: var(--normal-blue);
+    font-weight: bold;
+    font-size: 65px;
+    letter-spacing: .15em;
+    margin-left: 210px;
+    position: relative;
+}
+
+.aboutSectionTitle::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 10px;
+    background-color: var(--normal-blue);
+    border-radius: 200px;
+}

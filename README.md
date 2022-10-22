@@ -15,13 +15,11 @@
 - optimize skills section imgs (tech logos + square bg)
 ______________________________________
 
-- skills section (13h30-)
 
-- hover and animations
+- hover and animations (::befores)
 
 - responsive
 
 - see if section titles match left margin
 
 - check animations after responsive
-
