@@ -6,7 +6,7 @@
 
 - see if next loading img appears when project is deployed
 
-- put new project imgs and optimize them
+- put new project imgs (and links to live and code) and optimize them
 
 - test phone and my laptop
 
