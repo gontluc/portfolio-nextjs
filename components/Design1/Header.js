@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import { useRef, useEffect } from 'react'
 
-export default function Header({ projects, skills, about }) {
+export default function Header({ header, projects, skills, about }) {
     
     const hamburger = useRef(null)
     const sideMenu = useRef(null)
@@ -40,7 +40,7 @@ export default function Header({ projects, skills, about }) {
     },[])
 
     return (
-        <header className={styles.header}>
+        <header className={styles.header} ref={header}>
 
             <nav className={styles.navbar}>
                 <ul>

@@ -4,8 +4,10 @@ import Header from '../components/Design1/Header'
 import Projects from '../components/Design1/Projects/Projects'
 import Skills from '../components/Design1/Skills'
 import About from '../components/Design1/About'
+import Footer from '../components/Design1/Footer'
 
 export default function Home() {
+  const header = useRef(null)
   const projects = useRef(null)
   const skills = useRef(null)
   const about = useRef(null)
@@ -26,6 +28,7 @@ export default function Home() {
     <>
       <main>
         <Header 
+          header={header}
           projects={projects}
           skills={skills}
           about={about}
@@ -35,7 +38,7 @@ export default function Home() {
         <About about={about}/>
       </main>
 
-      <footer></footer>{/* do new component */}
+      <Footer header={header}/>
     </>
   )
 }

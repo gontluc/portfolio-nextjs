@@ -13,13 +13,17 @@
 - explain what to do when adding a project (for each design)
 
 - optimize skills section imgs (tech logos + square bg)
+
+- put svgs on extra folder
 ______________________________________
 
+- new section
 
-- hover and animations (::befores)
+- hovers and animations
 
 - responsive
 
 - see if section titles match left margin
 
 - check animations after responsive
+
