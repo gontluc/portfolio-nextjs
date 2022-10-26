@@ -27,7 +27,7 @@ export default function Projects({ projects }) {
             />
 
             <Project 
-                tech={['React.js', 'CSS', 'Javascript', 'Firestore']}
+                tech={['React.js', 'CSS', 'Firestore']}
                 title={"Social Media Clone"}
                 description={"A social media application built with React.js and Firestore from Firebase as a database. I've implemented the most common features like Likes and Comments, status, friends, search bar and a weather API. Just sign up with Google to access the app!"}
                 liveLink={'https://www.lucasgontijo.com'}
