@@ -75,7 +75,7 @@ export default function About({ about }) {
             </div>
 
             <div className={styles.aboutSquare} ref={img1About}>
-                <img src="/images/about1.png" alt="code in computer" />
+                <img src="/images/about1.jpg" alt="code in computer" />
             </div>
             
             <div className={styles.aboutSquare} ref={text2About}>
@@ -85,7 +85,7 @@ export default function About({ about }) {
             </div>
 
             <div className={styles.aboutSquare} ref={img2About}>
-                <img src="/images/about2.png" alt="plane" />
+                <img src="/images/about2.jpg" alt="plane" />
             </div>
         </div>
     )
