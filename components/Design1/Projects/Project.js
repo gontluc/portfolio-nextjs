@@ -66,6 +66,14 @@ export default function Project({ tech, title, description, liveLink, codeLink, 
                     ref={projectImg}
                 />
             </a>
+
+            {/* Render all imgs without displaying them */}
+            {imgsLinks.map((imgLink, index) => {
+                return (
+                    <img key={index} className={styles.ignoreImg} src={imgLink} />
+                )
+            })}
+            
         </div>
     )
 }

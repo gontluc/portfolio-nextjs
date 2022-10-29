@@ -140,6 +140,10 @@
     transform: scale(1.05);
 }
 
+.ignoreImg {
+    display: none;
+}
+
 @media (max-width: 1830px) {
     #projects {
         /* --margin-top-title-section-projects: 80px; */
