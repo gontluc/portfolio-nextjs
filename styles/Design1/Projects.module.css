@@ -134,6 +134,7 @@
     width: 650px;
     box-shadow: 5px 5px 10px rgba(0, 51, 129, 0.25);
     transition: all .4s ease-in-out;
+    max-height: 325px;
 }
 
 .projectImgs:hover {
@@ -178,6 +179,7 @@
 
     .projectImgs {
         width: 36vw;
+        max-height: 18vw;
     }
 
     .projectTechs {
@@ -289,5 +291,6 @@
     .projectImgs {
         margin-bottom: 30px;
         width: 100%;
+        max-height: none;
     }
 }
